@@ -1,0 +1,12 @@
+USE master;
+GO
+USE learnchef;
+GO
+
+CREATE LOGIN [IIS APPPOOL\Products] FROM WINDOWS
+GO
+CREATE USER [IIS APPPOOL\Products]
+GO
+
+GRANT SELECT on customers to [IIS APPPOOL\Products]
+GO
